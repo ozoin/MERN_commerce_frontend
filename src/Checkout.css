@@ -1,0 +1,35 @@
+.checkout {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    height: max-content;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout__title {
+    font-size: 3vh !important;
+    margin-right: 10px;
+    padding:10px;
+}
+.checkout__left {
+    display: flex;
+    flex-flow: wrap;
+    justify-content:center;
+}
+@media screen and (max-width: 601px) {
+    .checkout__title {
+      font-size: 40px !important;
+    }
+    .checkout__hide {
+        display:none;
+    }
+    .checkout {
+        display:flex;
+        flex-direction:column;
+        align-content:center;
+        justify-content:center;
+    }
+  }

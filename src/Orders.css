@@ -1,0 +1,74 @@
+.main {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  height: max-content;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.orders__title {
+  height: 70px;
+  background: #EC6F66;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F3A183, #EC6F66);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F3A183, #EC6F66); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.orders__order {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.svg_block {
+  display: inline-block;
+	position: relative;
+	width: 40%;
+	vertical-align: middle; 
+  overflow: hidden; 
+  margin-top: 20px;
+}
+.text_block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  text-align: center;
+}
+.text_block :first-child {
+    overflow: hidden;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    margin-top: 20px;
+}
+  .intro_block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  @media screen and (max-width: 992px) {
+
+  .svg_block {
+    width: 100%;
+  }
+  .text_block {
+    width: 100%;
+    margin: 10px 10px 10px 10px;
+  }
+  .text_block :first-child {
+    font-size: 20px
+  }
+}

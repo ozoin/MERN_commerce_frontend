@@ -1,0 +1,7 @@
+.button__group {
+    display:flex;
+    justify-content:space-between;
+}
+.button__group > button {
+    width:40%;
+}

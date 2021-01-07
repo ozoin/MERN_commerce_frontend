@@ -1,0 +1,99 @@
+.main {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    height: max-content;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .orders__title {
+    height: 70px;
+    background: #EC6F66;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F3A183, #EC6F66);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F3A183, #EC6F66); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .user_form {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 20px 20px 20px;
+        margin-top: 50px
+  }
+  form {
+    width:100%;
+  }
+  .textfield_block {
+    display:flex;
+    align-items:center;
+    padding: 10px 10px 10px 10px;
+  }
+  .change_icon {
+    color:red
+  }
+  .user_form {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .user_form:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .user_form {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+.svg_block {
+  display: inline-block;
+	position: relative;
+	width: 40%;
+	vertical-align: middle; 
+  overflow: hidden; 
+  margin-top: 20px;
+}
+.text_block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  text-align: center;
+}
+.text_block :first-child {
+    overflow: hidden;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    margin-top: 20px;
+}
+  .intro_block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  @media screen and (max-width: 992px) {
+  .user_form {
+    width:90%;
+    margin-bottom: 20%;
+  }
+  .svg_block {
+    width: 100%;
+  }
+  .text_block {
+    width: 100%;
+    margin: 10px 10px 10px 10px;
+  }
+  .text_block :first-child {
+    font-size: 20px
+  }
+}
