@@ -16,7 +16,7 @@ nav {
     min-height: 7vh;
     max-height: 1vh;
     width: 100%;
-    background-color: #30475e !important;
+    background-color: #4557fdde !important;
     color: white;
 }
 ul {
@@ -105,12 +105,12 @@ ul {
     right: 0;
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 990px) {
     #logo {
       font-size: 1.5em;
     }
     nav {
-        padding:30px 20px;
+        
     }
     #nav_buttons {
         display: none;

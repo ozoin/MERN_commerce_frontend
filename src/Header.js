@@ -103,7 +103,7 @@ function Header() {
                         </div>
                     </Link>
                 </ListItem>
-                ))}
+                ))}</List>
                 <ListItem className="shadow" button>
                     <Link to="/checkout" className="link_a">
                         <div className="link_options">
@@ -112,7 +112,7 @@ function Header() {
                         </div>
                     </Link>
                 </ListItem>
-            </List>
+            
             </div>
         );
     return (

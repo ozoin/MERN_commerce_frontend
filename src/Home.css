@@ -5,6 +5,7 @@
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
+    padding-top: 30px;
 }
 .home__row {
     display: flex;

@@ -8,3 +8,21 @@ a, a:hover, a:focus, a:active {
 .App {
     height: 100%;
 }
+
+@media screen and (max-width:1250px) {
+  
+    }
+  
+  
+  @media screen and (max-width: 992px) {
+   
+  }
+  
+  
+  @media screen and (max-width:850px) {
+    
+    }
+  
+  @media screen and (max-width: 600px) {
+  
+  }
