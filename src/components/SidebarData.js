@@ -11,7 +11,34 @@ import EXPRESS from '../media/express.svg';
 import NODEJS from '../media/node-js.svg';
 import MONGO from '../media/mongodb.svg';
 import WEBPACK from '../media/webpack.svg';
+import REACTJS from '../media/react.svg';
 
+export const LoggedData = [
+    {
+        title:"Home",
+        path: '/',
+        icon: <HomeIcon/>,
+        cName: 'nav-text'
+    },
+    {
+        title:"Logout",
+        path: '/logout',
+        icon: <ExitToAppIcon/>,
+        cName: 'nav-text'
+    },
+    {
+        title:"Orders",
+        path: '/orders',
+        icon: <ListAltRoundedIcon/>,
+        cName: 'nav-text'
+    },
+    {
+        title:"User",
+        path: '/UserPanel',
+        icon: <AccountCircleIcon/>,
+        cName: 'nav-text'
+    }
+]
 
 export const SidebarData = [
     {
@@ -27,37 +54,9 @@ export const SidebarData = [
         cName: 'nav-text'
     }
 ]
-export const LoggedData = [
-    {
-        title:"Home",
-        path: '/',
-        icon: <HomeIcon/>,
-        cName: 'nav-text'
-    },
-    {
-        title:"Logout",
-        path: '/logout',
-        icon: <ExitToAppIcon/>,
-        cName: 'nav-text'
-    },{
-        title:"Orders",
-        path: '/orders',
-        icon: <ListAltRoundedIcon/>,
-        cName: 'nav-text'
-    },
-    {
-        title:"User",
-        path: '/UserPanel',
-        icon: <AccountCircleIcon/>,
-        cName: 'nav-text'
-    },
-]
+
 
 export const TechStack = [
-    {
-        title: "JavaScript",
-        img: <img src={JS} className="tech_img"/>
-    },
     {
         title: "HTML",
         img: <img src={HTML} className="tech_img"/>
@@ -65,6 +64,14 @@ export const TechStack = [
     {
         title: "CSS",
         img: <img src={CSS} className="tech_img"/>
+    },
+    {
+        title: "JavaScript",
+        img: <img src={JS} className="tech_img"/>
+    },
+    {
+        title: "ReactJS",
+        img: <img src={REACTJS} className="tech_img"/>
     },
     {
         title: "ExpressJS",

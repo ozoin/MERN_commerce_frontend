@@ -19,7 +19,6 @@ import './Payment.css';
 import axios from '../axios';
 import { IconButton } from '@material-ui/core';
 import CheckIcon from '@material-ui/icons/Check';
-import Alert from '@material-ui/lab/Alert';
 const useStyles = makeStyles((theme) => ({
   listItem: {
     padding: theme.spacing(1, 0),
@@ -81,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
 export default function AddressForm() {
   const history = useHistory();
   const classes = useStyles();
-  const [{user,shipping,basket,messages},dispatch] = useStateValue();
+  const [{user,basket,messages},dispatch] = useStateValue();
   const [validator,setValidator] = useState(true);
   const [formData, setFormData] = useState({
     name:'',

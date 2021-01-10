@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react';
+import React,{useEffect} from 'react';
 import './App.css';
 import Header from './Header';
 import Home from './Home';
@@ -12,12 +12,11 @@ import { useStateValue } from './StateProvider';
 import Payment from "./Payment/Payment";
 import {loadStripe} from "@stripe/stripe-js";
 import {Elements} from "@stripe/react-stripe-js";
-import {StateContext} from "./StateProvider";
 import axios from "./axios";
 import Diagonal from "./components/Diagonal";
 const promise = loadStripe('pk_test_51HbXvsCIUgYNGl2BA3RFI0NHMpgbrpBmvWpseNflv2y5wzsylFGdrOYXj4L1xlS0k1rM9AsVOSbIKI3HWeY6K9ZK003TQrFc2g'); 
 function App() {
-  const [{user},dispatch] = useStateValue();
+  const [{},dispatch] = useStateValue();
   useEffect(() => {
     const checkLoggedIn = async () => {
       let token = localStorage.getItem("auth-token");

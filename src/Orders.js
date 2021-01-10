@@ -4,16 +4,6 @@ import { useStateValue } from './StateProvider';
 import Order from './Order';
 import axios from "./axios";
 import './Login.css';
-import Avatar from '@material-ui/core/Avatar';
-import Button from '@material-ui/core/Button';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import TextField from '@material-ui/core/TextField';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
-import Paper from '@material-ui/core/Paper';
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import SVGImg from "./media/orderPageIMG.svg"
@@ -76,10 +66,7 @@ function Orders() {
                 <div className="orders__order">
                     {
                     orders?.map(order=>{
-                      console.log(order)
-                      //basket:[item]
                         const {shipping:[items],_id,amount,created,buyerId,completed,basket} = order;
-                        console.log(basket)
                         return <Order orderId={_id} buyerId={buyerId} createdAt={created} shipping={items} status={completed} basketItems={basket} totalPrice={amount} />
                     })
                     }

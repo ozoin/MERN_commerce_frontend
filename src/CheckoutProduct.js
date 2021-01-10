@@ -6,7 +6,7 @@ import Box from '@material-ui/core/Box';
 import { useStateValue } from './StateProvider';
 import SnackBar from './Snackbar';
 export default function CheckoutProduct({id,image,title,price,rating}) {
-    const [{basket,messages},dispatch] = useStateValue();
+    const [{},dispatch] = useStateValue();
     let snackbar;
     const removeFromBasket = () => {
         dispatch({

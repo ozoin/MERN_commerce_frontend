@@ -1,27 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Header.css';
 import clsx from 'clsx';
-import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
-import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import LockOpenIcon from '@material-ui/icons/LockOpen';
 import Button from '@material-ui/core/Button';
-import MenuIcon from '@material-ui/icons/Menu';
 import { IconButton } from '@material-ui/core';
 import { useHistory } from "react-router-dom";
-import HistoryIcon from '@material-ui/icons/History';
-import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import { makeStyles } from '@material-ui/core/styles';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 import { SidebarData,LoggedData } from './components/SidebarData';
 const useStyles = makeStyles({
     list: {
@@ -45,7 +36,6 @@ function Header() {
         right: false,
       });
     const [{basket,user},dispatch] = useStateValue();
-    console.log(LoggedData)
     function LoginButton(props) {
         return (
             <Link to="/login">
@@ -86,6 +76,7 @@ function Header() {
         }
         setState({ ...state, [anchor]: open });
     };
+
         const list = (anchor) => (
             <div
             className={clsx(classes.list, {
@@ -103,7 +94,7 @@ function Header() {
                         </div>
                     </Link>
                 </ListItem>
-                ))}</List>
+                ))}
                 <ListItem className="shadow" button>
                     <Link to="/checkout" className="link_a">
                         <div className="link_options">
@@ -112,7 +103,7 @@ function Header() {
                         </div>
                     </Link>
                 </ListItem>
-            
+            </List>
             </div>
         );
     return (
