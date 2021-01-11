@@ -21,12 +21,6 @@ export const LoggedData = [
         cName: 'nav-text'
     },
     {
-        title:"Logout",
-        path: '/logout',
-        icon: <ExitToAppIcon/>,
-        cName: 'nav-text'
-    },
-    {
         title:"Orders",
         path: '/orders',
         icon: <ListAltRoundedIcon/>,
@@ -36,6 +30,12 @@ export const LoggedData = [
         title:"User",
         path: '/UserPanel',
         icon: <AccountCircleIcon/>,
+        cName: 'nav-text'
+    },
+    {
+        title:"Logout",
+        path: '/logoutSubmit',
+        icon: <ExitToAppIcon/>,
         cName: 'nav-text'
     }
 ]

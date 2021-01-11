@@ -13,6 +13,7 @@ import Payment from "./Payment/Payment";
 import {loadStripe} from "@stripe/stripe-js";
 import {Elements} from "@stripe/react-stripe-js";
 import axios from "./axios";
+import Contacts from "./components/Contacts";
 import Diagonal from "./components/Diagonal";
 const promise = loadStripe('pk_test_51HbXvsCIUgYNGl2BA3RFI0NHMpgbrpBmvWpseNflv2y5wzsylFGdrOYXj4L1xlS0k1rM9AsVOSbIKI3HWeY6K9ZK003TQrFc2g'); 
 function App() {
@@ -72,6 +73,7 @@ function App() {
             <Header/>
             <Diagonal/>
             <Home/>
+            <Contacts/>
           </Route>
         </Switch>
     
